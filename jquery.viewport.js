@@ -1,3 +1,13 @@
+/**
+ * jQuery Viewport Plugin
+ * 
+ * Author : Sandeep Jain
+ * Author Webiste: http://www.jsvrocks.com/
+ *
+ * Copyright 2011, Sandeep Jain
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * 
+ */
 (function (window, document, $) {
 	/*
 	 *  Function to find browser viewport size.
