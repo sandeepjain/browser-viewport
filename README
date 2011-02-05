@@ -1,0 +1,13 @@
+Usage guide:
+	  
+	 - To resize element only once.
+	  
+	   $("#element").fitToPage();
+	 
+	 - To keep element size in sync with browser size.
+	 
+	   $("#element").fitToPage(true);
+	   
+	 - Returns current web page size.
+	    
+	   var size = $.getPageSize();
