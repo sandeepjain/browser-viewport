@@ -15,21 +15,20 @@
 	function viewport() {
 
 		var doc = $(document),
-			h = doc.height();
+			h   = doc.height(),
+			w   = doc.width();
 			
 		// for the horror browsers
 		if ($.browser.msie) {
 			// If there are no scrollbars then use window.height as width
-			var w = h;
-			return [
-				window.innerWidth || 						// ie7+
+			w = h;
+			h =	h - w < 20 ? w : h;
+			w = window.innerWidth || 						// ie7+
 				document.documentElement.clientWidth || 	// ie6  
-				document.body.clientWidth, 					// ie6 quirks mode
-				h - w < 20 ? w : h
-			];
+				document.body.clientWidth; 					// ie6 quirks mode
 		}
 		// for cute and well behaving browsers
-		return {width:doc.width(), height: h}; 
+		return {width: w, height: h}; 
 	}
 	
 	
@@ -53,7 +52,7 @@
 			$(this).width(size.width).height(size.height);
 		});
 		
-		if (typeof isLive != 'undefined' && (isLive === true || isLive.toLowerCase() == 'true')) {
+		if (typeof isLive !== 'undefined' && (isLive === true || isLive.toLowerCase() == 'true')) {
 			$(window).resize( function () {
 				self.fitToPage();
 			});
@@ -74,4 +73,4 @@
 		return viewport();
 	};
 	
-})(this, this.document, jQuery);
+})(window, document, jQuery);
