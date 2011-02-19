@@ -22,7 +22,7 @@ A jQuery plugin to get your webpage's viewport size (i.e. page's exact width and
 	   
 	 - Returns current web page size.
 	    
-	   var size = $.getPageSize();
+	   var size = $().getPageSize();
 
 -----------------------------------------------------------------------------------------
   Support for
