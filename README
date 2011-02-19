@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
   What is it?
 -----------------------------------------------------------------------------------------
-A jQuery plugin to get current browser viewport size (page's exact width and height). 
+A jQuery plugin to get your webpage's viewport size (i.e. page's exact width and height). 
 
 -----------------------------------------------------------------------------------------
   Requirements
@@ -30,7 +30,10 @@ A jQuery plugin to get current browser viewport size (page's exact width and hei
 - IE6+
 - Firefox 3.0+
 - Opera 9+
-- Not tested on Chrome and Safari, but plugin expected to work on both the browsers.
+- Chrome
+- Safari
+
+Doesn't this list include almost all major browser .. (Yes, you are right IE6 is also included in this.)
 
 -----------------------------------------------------------------------------------------
   Author
